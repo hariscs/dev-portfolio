@@ -1,0 +1,148 @@
+:root {
+	--clr-white: #fff;
+
+	--clr-grey: #f8f8f8;
+	--clr-grey1: #333;
+	--clr-grey2: #4f4f4f;
+	--clr-grey3: #828282;
+
+	--clr-blue: #2f80ed;
+}
+
+* {
+	box-sizing: border-box;
+}
+
+body {
+	margin: 0;
+	font-family: 'Montserrat', sans-serif;
+	font-size: 18px;
+	line-height: 1.6;
+	background: var(--clr-grey);
+	color: var(--clr-grey3);
+}
+
+img {
+	max-width: 100%;
+	display: block;
+	border-radius: 12px;
+}
+
+.container {
+	width: 90%;
+	max-width: 1440px;
+	margin: 0 auto;
+	padding: 2em 0;
+}
+
+.grid {
+	display: grid;
+	grid-template-areas:
+		'profile frontend design'
+		'profile projects-bar projects-bar'
+		'profile recipe recipe'
+		'expr gallery gallery'
+		'expr checkout checkout'
+		'hobby design-bar design-bar'
+		'hobby blog blog'
+		'hobby';
+	gap: 2em;
+}
+
+/* .profile-card {
+	grid-area: profile;
+}
+.frontend-card {
+	grid-area: frontend;
+}
+.design-card {
+	grid-area: design;
+}
+.experience-card {
+	grid-area: expr;
+}
+.hobbies-card {
+	grid-area: hobby;
+}
+.projects-bar-card {
+	grid-area: projects-bar;
+}
+.recipe-card {
+	grid-area: profile;
+}
+.gallery-card-card {
+	grid-area: gallery;
+}
+
+.blogs-bar-card {
+	grid-area: blogs-bar;
+}
+.blog-card {
+	grid-area: blog;
+}
+.-card {
+	grid-area: ;
+}
+.-card {
+	grid-area: ;
+}
+.-card {
+	grid-area: ;
+} */
+
+/* all cards */
+.card {
+	background: var(--clr-white);
+	padding: 1em;
+	border-radius: 12px;
+	box-shadow: -1px 14px 32px -22px rgba(0, 0, 0, 0.8);
+}
+/* profile */
+
+.profile-card {
+	/* display: flex;
+	flex-direction: column; */
+}
+
+.profile-img {
+	/* width: 250px; */
+}
+
+.profile-name {
+	font-weight: 600;
+	font-size: 24px;
+	color: var(--clr-grey2);
+}
+
+.name-info {
+	color: var(--clr-grey3);
+}
+
+.email,
+.phone {
+	color: var(--clr-grey2);
+}
+
+.profile-text {
+	color: var(--clr-grey3);
+	max-width: 30ch;
+}
+
+/* skills section */
+.stat-card {
+	display: flex;
+	justify-content: space-between;
+}
+
+/* hobby section */
+.hobb-img {
+	width: 369px;
+}
+
+.projects-img {
+	width: 322px;
+}
+
+.blog-img {
+	width: 400px;
+}
