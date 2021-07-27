@@ -49,18 +49,8 @@ img {
 	background: var(--clr-white);
 	padding: 1em;
 	border-radius: 12px;
-	box-shadow: -1px 14px 32px -22px rgba(0, 0, 0, 0.8);
 }
 /* profile */
-
-.profile-card {
-	/* display: flex;
-	flex-direction: column; */
-}
-
-.profile-img {
-	/* width: 250px; */
-}
 
 .profile-name {
 	font-weight: 600;
