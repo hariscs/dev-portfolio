@@ -21,6 +21,10 @@ body {
 	background: var(--clr-grey);
 	color: var(--clr-grey3);
 }
+a {
+	color: var(--clr-blue);
+	text-decoration: none;
+}
 
 img {
 	max-width: 100%;
@@ -30,7 +34,7 @@ img {
 
 .container {
 	width: 90%;
-	max-width: 1440px;
+	max-width: 375px;
 	margin: 0 auto;
 	padding: 2em 0;
 }
@@ -112,10 +116,12 @@ img {
 	font-weight: 600;
 	font-size: 24px;
 	color: var(--clr-grey2);
+	margin-bottom: 0;
 }
 
 .name-info {
 	color: var(--clr-grey3);
+	margin: 0;
 }
 
 .email,
@@ -123,9 +129,24 @@ img {
 	color: var(--clr-grey2);
 }
 
+.email-para {
+	margin-bottom: 0;
+	display: flex;
+	align-items: center;
+	gap: 1em;
+}
+
+.phone-para {
+	display: flex;
+	align-items: center;
+	gap: 1em;
+	margin-top: 0;
+}
+
 .profile-text {
 	color: var(--clr-grey3);
-	max-width: 30ch;
+	max-width: 25ch;
+	margin-bottom: 0;
 }
 
 /* skills section */
@@ -134,15 +155,139 @@ img {
 	justify-content: space-between;
 }
 
+.card-title {
+	font-weight: 700;
+	font-size: 18px;
+	color: var(--clr-grey2);
+}
+
+.tech {
+	font-size: 16px;
+	font-weight: 500;
+	color: var(--clr-grey2);
+	margin-bottom: 0;
+}
+
+/* experience card */
+.exp-card {
+	display: flex;
+	align-items: flex-start;
+	gap: 1em;
+	margin-top: 2em;
+}
+
+.exp-title {
+	font-size: 16px;
+	font-weight: 600;
+	color: var(--clr-grey1);
+	margin-top: 0;
+}
+
+.exp-text {
+	font-size: 16px;
+	margin-top: 1.5em;
+	margin-bottom: 0;
+	max-width: 25ch;
+}
+
+.fa-google-wallet {
+	color: #3a81f1;
+}
+
+.fa-cc-stripe {
+	color: #6b71e3;
+}
+
+.fa-discord {
+	color: #7289da;
+}
+
+.date {
+	color: var(--clr-grey2);
+	font-size: 14px;
+}
 /* hobby section */
+.hobb-card {
+	margin-top: 2em;
+}
+
+.hobb-title {
+	font-size: 18px;
+	font-weight: 600;
+	margin-bottom: 0;
+}
+
+.hobb-text {
+	margin-top: 0;
+	margin-bottom: 0;
+	font-size: 16px;
+	color: var(--clr-grey3);
+}
+
 .hobb-img {
 	width: 369px;
 }
+.blogs-bar-card .bar,
+.projects-bar-card .bar {
+	margin: 0px;
+	font-size: 18px;
+	font-weight: 500;
+	color: var(--clr-grey2);
+}
 
+/* projects section */
 .projects-img {
 	width: 322px;
+	margin-bottom: 1em;
+}
+
+.tag {
+	font-size: 16px;
+	color: var(--clr-grey2);
+}
+
+.tag + .tag {
+	margin-left: 0.5em;
+}
+
+.card-info {
+	font-size: 16px;
+	max-width: 43ch;
+}
+
+.btn {
+	display: inline-block;
+	padding: 0.5em 2em;
+	border: 1px solid var(--clr-blue);
+	border-radius: 12px;
+	cursor: pointer;
+	margin-top: 1.5em;
+}
+
+.btn-primary {
+	background: var(--clr-blue);
+	color: var(--clr-white);
+}
+
+.btn + .btn {
+	margin-left: 0.4em;
+}
+
+/* blog section */
+.blog-upper-text {
+	color: #e0e0e0;
+	font-size: 16px;
+}
+
+.card-text {
+	font-size: 16px;
 }
 
 .blog-img {
 	width: 400px;
+}
+
+footer {
+	text-align: center;
+	margin-bottom: 0;
 }
