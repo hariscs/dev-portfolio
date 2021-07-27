@@ -41,58 +41,8 @@ img {
 
 .grid {
 	display: grid;
-	grid-template-areas:
-		'profile frontend design'
-		'profile projects-bar projects-bar'
-		'profile recipe recipe'
-		'expr gallery gallery'
-		'expr checkout checkout'
-		'hobby design-bar design-bar'
-		'hobby blog blog'
-		'hobby';
 	gap: 2em;
 }
-
-/* .profile-card {
-	grid-area: profile;
-}
-.frontend-card {
-	grid-area: frontend;
-}
-.design-card {
-	grid-area: design;
-}
-.experience-card {
-	grid-area: expr;
-}
-.hobbies-card {
-	grid-area: hobby;
-}
-.projects-bar-card {
-	grid-area: projects-bar;
-}
-.recipe-card {
-	grid-area: profile;
-}
-.gallery-card-card {
-	grid-area: gallery;
-}
-
-.blogs-bar-card {
-	grid-area: blogs-bar;
-}
-.blog-card {
-	grid-area: blog;
-}
-.-card {
-	grid-area: ;
-}
-.-card {
-	grid-area: ;
-}
-.-card {
-	grid-area: ;
-} */
 
 /* all cards */
 .card {
@@ -290,4 +240,67 @@ img {
 footer {
 	text-align: center;
 	margin-bottom: 0;
+}
+
+/* media query for larger screens */
+@media (min-width: 800px) {
+	.container {
+		max-width: 1440px;
+	}
+	.flex {
+		display: flex;
+		align-items: center;
+	}
+	.grid {
+		grid-template-areas:
+			'profile front design'
+			'profile front .'
+			'profile p-bar p-bar'
+			'expr recipe recipe'
+			'expr gallery gallery'
+			'hobby checkout checkout'
+			'hobby b-bar b-bar'
+			'hobby blogs blogs';
+		gap: 1em;
+	}
+
+	.profile-card {
+		grid-area: profile;
+	}
+	.frontend-card {
+		grid-area: front;
+	}
+	.design-card {
+		grid-area: design;
+	}
+	.experience-card {
+		grid-area: expr;
+	}
+
+	.projects-bar-card {
+		grid-area: p-bar;
+	}
+
+	.hobbies-card {
+		grid-area: hobby;
+	}
+
+	.recipe-card {
+		grid-area: recipe;
+	}
+	.gallery-card {
+		grid-area: gallery;
+	}
+
+	.checkout-card {
+		grid-area: checkout;
+	}
+
+	.blogs-bar-card {
+		grid-area: b-bar;
+	}
+
+	.blog-card {
+		grid-area: blogs;
+	}
 }
